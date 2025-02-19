@@ -9,8 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        orange: "#EBA82C",
+        blackLight: "#1D1D1B",
+      },
+      backgroundImage: {
+        hero: "url('/assets/images/png/hero-bg-image.png')",
       },
     },
   },
