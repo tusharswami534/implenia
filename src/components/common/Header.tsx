@@ -2,10 +2,17 @@
 import { HEADER_LIST } from "@/utils/helper";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  });
   return (
     <div className="bg-white py-[18.5px] max-xl:px-5 w-full flex justify-center items-center">
       <div className="container max-w-[1177px] flex justify-between items-center">
@@ -15,7 +22,7 @@ const Header = () => {
             alt="logo"
             width={93}
             height={93}
-            className="max-md:size-20 max-sm:size-16"
+            className="max-lg:size-20 max-md:size-16 max-sm:size-12"
           />
         </Link>
         <div
@@ -36,7 +43,7 @@ const Header = () => {
         </div>
         <button
           onClick={() => setOpen(!open)}
-          className="overflow-hidden relative z-50 lg:hidden size-6 flex flex-col justify-between items-center"
+          className="overflow-hidden relative z-50 sm:hidden size-6 flex flex-col justify-between items-center"
         >
           <span
             className={`bg-black rounded-md w-6 h-0.5 block transition-all duration-300 ${

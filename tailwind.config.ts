@@ -18,6 +18,7 @@ export default {
       },
       backgroundImage: {
         hero: "url('/assets/images/png/hero-bg-image.png')",
+        howItWork: "url('/assets/images/png/works-bg-image.png')",
       },
     },
   },
