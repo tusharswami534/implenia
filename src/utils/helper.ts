@@ -17,9 +17,17 @@ export const HEADER_LIST = [
   },
 ];
 
-export const IMPLENIA_LIST = [ 
-    {
-        number : '+155'
-        
-    }
-]
+export const IMPLENIA_LIST = [
+  {
+    number: 155,
+    title: "Ideas submitted",
+  },
+  {
+    number: 325,
+    title: "Active Platform users",
+  },
+  {
+    number: 250,
+    title: "Community Members",
+  },
+];
