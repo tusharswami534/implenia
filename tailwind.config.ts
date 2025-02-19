@@ -17,8 +17,11 @@ export default {
         yellow: "#F3B72C",
       },
       backgroundImage: {
-        hero: "url('/assets/images/png/hero-bg-image.png')",
-        howItWork: "url('/assets/images/png/works-bg-image.png')",
+        hero: "url('/assets/images/webp/hero-bg-image.webp')",
+        howItWork: "url('/assets/images/webp/works-bg-image.webp')",
+      },
+      backgroundPosition: {
+        customRight: "0px ",
       },
     },
   },

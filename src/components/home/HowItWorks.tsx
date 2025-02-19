@@ -19,14 +19,14 @@ const HowItWorks = () => {
           {!playVideo ? (
             <div className="relative">
               <Image
-                src={"/assets/images/png/works-bg-image.png"}
+                src={"/assets/images/webp/works-bg-image.webp"}
                 alt="youtube video"
                 width={1064}
                 height={580}
-                className="max-xl:h-[550px] pointer-events-none max-lg:h-[450px] max-md:h-[400px] max-sm:h-[350px] max-[400px]:h-[200px] max-xl:w-full max-xl:max-w-[1064px]"
+                className="max-xl:h-[550px] max-lg:h-[450px] max-md:h-[300px] max-sm:h-[300px] max-[500px]:h-[250px] max-[400px]:h-[200px] rounded-[25px] max-md:rounded-2xl max-xl:w-full max-xl:max-w-[1064px]"
               />
               <div className="w-[34.96%] h-[24.83%] bg-yellow absolute top-6 flex justify-center items-center left-[29px]">
-                <p className="text-[21px] max-lg:text-xl max-md:text-base max-md:leading-4 max-sm:text-[8px] max-sm:leading-[8px]  !leading-[100%] text-blackLight text-center font-bold">
+                <p className="text-[21px] max-lg:text-xl max-md:text-base max-md:leading-4 max-sm:text-[8px] max-sm:leading-[8px] !leading-[100%] text-blackLight text-center font-bold">
                   VIDEO CAN BE EXCHANGED FOR CAMPAIGNS. <br />
                   <br className="max-lg:hidden" /> -Title: Name of Campaign{" "}
                   <br /> -Button: Join the campaign!
@@ -37,7 +37,7 @@ const HowItWorks = () => {
             <iframe
               width="100%"
               height="580"
-              className="max-xl:h-[550px] max-lg:h-[450px] max-md:h-[400px] max-sm:h-[350px] max-[400px]:h-[200px] rounded-[25px]"
+              className="max-xl:h-[550px] max-lg:h-[450px] max-md:h-[300px] max-sm:h-[300px] max-[500px]:h-[250px] max-[400px]:h-[200px] rounded-[25px] max-md:rounded-2xl"
               src="https://www.youtube.com/embed/N7ZmPYaXoic?autoplay=1"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

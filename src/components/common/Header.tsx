@@ -14,11 +14,11 @@ const Header = () => {
     }
   });
   return (
-    <div className="bg-white py-[18.5px] max-xl:px-5 w-full flex justify-center items-center">
+    <div className="bg-white py-[18.5px] max-xl:px-5 w-full flex shadow-[0_4px_8px_#00000040] justify-center items-center">
       <div className="container max-w-[1177px] flex justify-between items-center">
         <Link href="/">
           <Image
-            src="/assets/images/png/page-logo.png"
+            src="/assets/images/webp/page-logo.webp"
             alt="logo"
             width={93}
             height={93}
