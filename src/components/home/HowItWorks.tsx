@@ -17,7 +17,7 @@ const HowItWorks = () => {
           onClick={() => setPlayVideo(!playVideo)}
         >
           {!playVideo ? (
-            <div className="relative">
+            <div className="relative cursor-pointer">
               <Image
                 src={"/assets/images/webp/works-bg-image.webp"}
                 alt="youtube video"

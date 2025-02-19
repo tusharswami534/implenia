@@ -4,7 +4,7 @@ import Header from "../common/Header";
 
 const Hero = () => {
   return (
-    <div className=" bg-cover bg-right bg-no-repeat bg-hero">
+    <div className=" bg-cover bg-right bg-hero-mobile bg-no-repeat bg-hero">
       <Header />
       <div className="flex justify-center items-center min-h-[662px] max-sm:min-h-[600px] relative max-xl:px-5">
         <Image

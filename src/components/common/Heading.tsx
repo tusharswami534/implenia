@@ -11,7 +11,7 @@ const Heading = ({ myClass, text }: HeadingProps) => {
     >
       {text}
     </h2>
-  );
+  );    
 };
 
 export default Heading;
