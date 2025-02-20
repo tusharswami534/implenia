@@ -7,12 +7,12 @@ import CustomButton from "../common/CustomButton";
 const Stories = () => {
   return (
     <div className="pt-[128px] pb-[144px] ax-lg:py-28 max-md:py-20 max-sm:py-16 px-5">
-      <div className="container mx-auto max-w-[1091px]">
+      <div className="container mx-auto max-w-[1091px] max-sm:flex max-sm:justify-center max-sm:flex-col max-sm:items-center">
         <Heading
-          myClass="pb-[25px] max-sm:pb-2 max-md-4"
+          myClass="pb-[25px] max-sm:pb-3"
           text="INTRAPRENEURSHIP STORIES"
         />
-        <div className="max-w-[1071px] max-xl:gap-10 max-xl:justify-center flex-wrap ml-auto flex justify-between">
+        <div className="max-w-[1071px] max-xl:gap-10 max-xl:justify-start max-sm:justify-center flex-wrap ml-auto flex justify-between">
           {STORIES_LIST.map((item, index) => (
             <div
               key={index}
@@ -40,7 +40,10 @@ const Stories = () => {
             </div>
           ))}
         </div>
-        <CustomButton text="More Stories" myClass="mt-[39px] ml-[39px]" />
+        <CustomButton
+          text="More Stories"
+          myClass="mt-[39px] max-lg:mt-7 max-md:mt-5  max-lg:mx-auto lg:ml-[39px]"
+        />
       </div>
     </div>
   );

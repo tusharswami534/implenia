@@ -19,7 +19,7 @@ const KickBoxCard = ({
   titleClass,
 }: kickBoxCardProps) => {
   return (
-    <div className="max-w-[323px] flex justify-center gap-y-[39px] items-center flex-col">
+    <div className="max-w-[323px] flex justify-center gap-y-[39px] max-md:gap-y-7 items-center flex-col">
       <Image
         src={cardImage}
         width={227}

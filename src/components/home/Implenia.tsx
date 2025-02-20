@@ -21,15 +21,15 @@ const Implenia = () => {
       <div className="container max-w-[1090px]">
         <Heading myClass="mb-4 max-sm:mb-2" text="IMPLENIA KICKBOX" />
         <Description text="Since 2019, our Kickbox Intrapreneurship Program has been inspiring employees across all divisions to turn their ideas into impactful solutions. From validating ideas (RedBox) to piloting projects (BlueBox) and driving implementation (GoldBox), Kickbox provides the tools and support to shape the future of Implenia. Become an intrapreneur yourself and bring your idea to life!" />
-        <div className="flex justify-between mt-[47px] max-lg:mt-11 max-md:mt-10 max-sm:mt-8 items-center max-lg:flex-col max-lg:gap-y-8">
+        <div className="flex justify-between mt-[47px] max-lg:mt-11 max-md:mt-10 max-sm:mt-8 items-center max-lg:items-start max-lg:flex-col max-lg:gap-y-8">
           <div
             ref={ref}
-            className="flex max-md:gap-6 max-md:flex-wrap max-md:justify-center max-md:items-center"
+            className="flex max-md:gap-6 max-md:flex-wrap max-md:items-center"
           >
             {IMPLENIA_LIST.map((item, index) => (
               <div
                 key={index}
-                className={`flex flex-col justify-center items-center ${
+                className={`flex flex-col justify-center max-lg:justify-start items-center ${
                   index === 0 ? "md:mr-[71px]" : index === 1 && "md:mr-[54px]"
                 }`}
               >
