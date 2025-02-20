@@ -17,6 +17,7 @@ export default {
         yellow: "#F3B72C",
         lightBlue: "#009FE3",
         lightGray: "#8F9090",
+        darkGray: "#9DA1A2",
       },
       backgroundImage: {
         hero: "url('/assets/images/webp/hero-bg-image.webp')",

@@ -1,4 +1,5 @@
 import Community from "@/components/home/Community";
+import Faqs from "@/components/home/Faqs";
 import Hero from "@/components/home/Hero";
 import HowItWorks from "@/components/home/HowItWorks";
 import Implenia from "@/components/home/Implenia";
@@ -14,6 +15,7 @@ export default function Home() {
       <KickBox />
       <Community />
       <Stories />
+      <Faqs />
     </>
   );
 }
