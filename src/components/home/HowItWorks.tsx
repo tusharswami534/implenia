@@ -6,7 +6,10 @@ import Image from "next/image";
 const HowItWorks = () => {
   const [playVideo, setPlayVideo] = useState(false);
   return (
-    <div className="bg-gray pt-[128px] pb-[144px] max-lg:py-28 max-md:py-20 max-sm:py-16 flex justify-center items-center px-5">
+    <div
+      id="community"
+      className="bg-gray pt-[128px] pb-[144px] max-lg:py-28 max-md:py-20 max-sm:py-16 flex justify-center items-center px-5"
+    >
       <div className="container max-w-[1118px] ">
         <Heading
           myClass="mb-16 max-lg:mb-12 max-md:mb-10 max-sm:mb-8"

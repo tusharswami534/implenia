@@ -22,7 +22,7 @@ const Header = () => {
             alt="logo"
             width={93}
             height={93}
-            className="max-lg:size-20 max-md:size-16 max-sm:size-12"
+            className="max-lg:size-20 pointer-events-none max-md:size-16 max-sm:size-12"
           />
         </Link>
         <div

@@ -13,7 +13,10 @@ const Implenia = () => {
     onChange: (inView) => setCount(inView),
   });
   return (
-    <div className="pt-[134px] pb-[129px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5 flex justify-center items-center">
+    <div
+      id="stories"
+      className="pt-[134px] pb-[129px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5 flex justify-center items-center"
+    >
       <div className="container max-w-[1090px]">
         <Heading myClass="mb-4 max-sm:mb-2" text="IMPLENIA KICKBOX" />
         <Description text="Since 2019, our Kickbox Intrapreneurship Program has been inspiring employees across all divisions to turn their ideas into impactful solutions. From validating ideas (RedBox) to piloting projects (BlueBox) and driving implementation (GoldBox), Kickbox provides the tools and support to shape the future of Implenia. Become an intrapreneur yourself and bring your idea to life!" />
