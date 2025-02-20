@@ -23,9 +23,24 @@
   }
 }
 
+.swiper-slide{
+  padding-bottom: 40px;
+}
+
+@media (min-width : 1024.98px) {
+  .swiper-pagination{
+    display: none;
+  }
+
+  .swiper-slide{
+    padding-bottom: 0px;
+  }
+}
+
 
 @media (max-width: 639.98px) {
   .bg-hero-mobile{
     background-position: right -100px center;
   }
 }
+
