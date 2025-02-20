@@ -1,8 +1,21 @@
-import { title } from "process";
-
 interface HeaderItem {
   title: string;
   link: string;
+}
+
+interface KickBoxCardItem {
+  image: string;
+  title: string;
+  titleClass: string;
+  heading: string;
+  descriptionOne: string;
+  descriptionTwo: string;
+}
+interface StoriesItem {
+  image: string;
+  title: string;
+  cardBoxClass: string;
+  boxContent: string;
 }
 
 export const HEADER_LIST: HeaderItem[] = [
@@ -30,7 +43,7 @@ export const IMPLENIA_LIST: string[] = [
   "Community Members",
 ];
 
-export const KICKBOX_PROCESS_LIST = [
+export const KICKBOX_PROCESS_LIST: KickBoxCardItem[] = [
   {
     image: "/assets/images/png/kick-box-red.png",
     title: "Validate",
@@ -60,5 +73,50 @@ export const KICKBOX_PROCESS_LIST = [
       "Once you've proven that your idea has real business potential, you'll move to the GoldBox phase. Congratulations! This is your opportunity to scale and implement your idea within the organization, as a separate project, or even as a spin-off.",
     descriptionTwo:
       "Duration: ongoing Budget: According to funding 20-100% of your working time",
+  },
+];
+
+export const STORIES_LIST: StoriesItem[] = [
+  {
+    image: "/assets/images/png/family-friendly.png",
+    title: "Family Friendly Implenia",
+    cardBoxClass: "bg-lightBlue",
+    boxContent: "BlueBox",
+  },
+  {
+    image: "/assets/images/png/mobile-sos.png",
+    title: "Mobile SOS-Station",
+    cardBoxClass: "bg-orange",
+    boxContent: "GoldBox",
+  },
+  {
+    image: "/assets/images/png/hps-eps.png",
+    title: "HPS-EPS Tunnelelement",
+    cardBoxClass: "bg-orange",
+    boxContent: "GoldBox",
+  },
+];
+
+export const COMMUNITY_LIST = [
+  {
+    heading:
+      "With innovative and efficient solutions we can surprise our customers and increase our chances of success - I experienced this in many projects. Take the time to be courageous and active with new ideas!",
+    profile: "/assets/images/png/profile-image.png",
+    post: "Head Division Buildings",
+    name: "Jens Vollmar",
+  },
+  {
+    heading:
+      "With innovative and efficient solutions we can surprise our customers and increase our chances of success - I experienced this in many projects. Take the time to be courageous and active with new ideas!",
+    profile: "/assets/images/png/profile-image.png",
+    post: "Head Division Buildings",
+    name: "Jens Vollmar",
+  },
+  {
+    heading:
+      "With innovative and efficient solutions we can surprise our customers and increase our chances of success - I experienced this in many projects. Take the time to be courageous and active with new ideas!",
+    profile: "/assets/images/png/profile-image.png",
+    post: "Head Division Buildings",
+    name: "Jens Vollmar",
   },
 ];

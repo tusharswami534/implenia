@@ -1,7 +1,9 @@
+import Community from "@/components/home/Community";
 import Hero from "@/components/home/Hero";
 import HowItWorks from "@/components/home/HowItWorks";
 import Implenia from "@/components/home/Implenia";
 import KickBox from "@/components/home/KickBox";
+import Stories from "@/components/home/Stories";
 
 export default function Home() {
   return (
@@ -9,7 +11,9 @@ export default function Home() {
       <Hero />
       <Implenia />
       <HowItWorks />
-      <KickBox/>
+      <KickBox />
+      <Community />
+      <Stories />
     </>
   );
 }

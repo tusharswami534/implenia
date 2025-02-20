@@ -10,7 +10,7 @@ import CustomButton from "../common/CustomButton";
 const Implenia = () => {
   const [count, setCount] = useState(false);
   const { ref } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     onChange: (inView) => setCount(inView),
   });
   return (
@@ -55,7 +55,7 @@ const Implenia = () => {
               </div>
             ))}
           </div>
-          <CustomButton text=" Submit your idea!"/>
+          <CustomButton text=" Submit your idea!" />
         </div>
       </div>
     </div>
