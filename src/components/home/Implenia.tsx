@@ -5,6 +5,7 @@ import Description from "../common/Description";
 import { IMPLENIA_LIST } from "@/utils/helper";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import CustomButton from "../common/CustomButton";
 
 const Implenia = () => {
   const [count, setCount] = useState(false);
@@ -54,9 +55,7 @@ const Implenia = () => {
               </div>
             ))}
           </div>
-          <button className="py-[11px] whitespace-nowrap px-[22px] min-[1440px]:relative max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] max-lg:max-w-[200px] max-lg:min-h-[55px] max-md:min-h-[45px] rounded-[47px] border-2 hover:shadow-[270px_0px_0px_#FF132D_inset] hover:text-white transition-all duration-300 border-red border-solid text-red font-bold text-[21px] leading-[21px] max-w-[268px] min-h-[56px] w-full">
-            Submit your idea!
-          </button>
+          <CustomButton text=" Submit your idea!"/>
         </div>
       </div>
     </div>

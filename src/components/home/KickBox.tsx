@@ -3,6 +3,7 @@ import React from "react";
 import KickBoxCard from "../common/KickBoxCard";
 import Heading from "../common/Heading";
 import Description from "../common/Description";
+import CustomButton from "../common/CustomButton";
 
 const KickBox = () => {
   return (
@@ -29,9 +30,10 @@ const KickBox = () => {
             />
           ))}
         </div>
-        <button className="py-[11px] mt-11 max-lg:mt-8 max-md:mt-6 max-sm:mt-5 whitespace-nowrap px-[22px] min-[1440px]:relative max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] max-lg:max-w-[200px] max-lg:min-h-[55px] max-md:min-h-[45px] rounded-[47px] border-2 hover:shadow-[270px_0px_0px_#FF132D_inset] hover:text-white transition-all duration-300 border-red border-solid text-red font-bold text-[21px] leading-[21px] max-w-[268px] min-h-[56px] w-full">
-          Start your RedBox!
-        </button>
+        <CustomButton
+          text="Start your RedBox!"
+          myClass="mt-11 max-lg:mt-8 max-md:mt-6 max-sm:mt-5"
+        />
       </div>
     </div>
   );
