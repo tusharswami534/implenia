@@ -1,3 +1,4 @@
+import Footer from "@/components/common/Footer";
 import Community from "@/components/home/Community";
 import Faqs from "@/components/home/Faqs";
 import Hero from "@/components/home/Hero";
@@ -16,6 +17,7 @@ export default function Home() {
       <Community />
       <Stories />
       <Faqs />
+      <Footer/>
     </>
   );
 }

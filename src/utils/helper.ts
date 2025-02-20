@@ -30,6 +30,11 @@ interface FaqItem {
   description: string;
 }
 
+interface FaqAnswerItem {
+  title: string;
+  description: string;
+}
+
 export const HEADER_LIST: HeaderItem[] = [
   {
     title: "Home",
@@ -176,5 +181,17 @@ export const FOOTER_LIST = [
   {
     title: "Home",
     link: "#hero",
+  },
+  {
+    title: "Projects",
+    link: "#projects",
+  },
+  {
+    title: "Community",
+    link: "#community",
+  },
+  {
+    title: "Contact",
+    link: "#contact",
   },
 ];
