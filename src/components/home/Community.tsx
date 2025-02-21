@@ -65,10 +65,10 @@ const Community = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <button className="swiper-next max-lg:hidden absolute top-1/2 z-10 left-0">
+          <button className="swiper-prev max-lg:hidden absolute top-1/2 z-10 left-0">
             <NextIcon />
           </button>
-          <button className="swiper-prev max-lg:hidden absolute right-0 top-1/2 z-20 ">
+          <button className="swiper-next max-lg:hidden absolute right-0 top-1/2 z-20 ">
             <PrevIcon />
           </button>
         </div>

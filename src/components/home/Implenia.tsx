@@ -37,15 +37,7 @@ const Implenia = () => {
                   +
                   <CountUp
                     start={0}
-                    end={
-                      count && index === 0
-                        ? 155
-                        : count && index === 1
-                        ? 325
-                        : count && index === 2
-                        ? 250
-                        : 0
-                    }
+                    end={count ? [155, 325, 250][index] || 0 : 0}
                     duration={3}
                   />
                 </h3>
