@@ -13,17 +13,17 @@ const Faqs = () => {
     setOpenIndex(openIndex === index ? false : index);
   };
   return (
-    <div className="bg-gray pt-[128px] pb-[146px]">
+    <div className="bg-gray pt-[128px] pb-[146px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5">
       <div className="max-w-[1090px] container mx-auto">
         <Heading myClass="pb-[9px]" text="FAQs" />
         {FAQ_LIST.map((data, index: number) => (
           <div
             key={index}
-            className="overflow-hidden min-h-[45px] border-b-[1px] border-solid border-darkGray"
+            className="overflow-hidden border-b-[1px] border-solid border-darkGray"
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="text-[21px] font-semibold leading-[21px] max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full py-2"
+              className="text-[21px] font-semibold text-left py-3 leading-[21px] max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full"
             >
               {data.title}
               <span
@@ -38,7 +38,9 @@ const Faqs = () => {
             </button>
             <div
               className={`${
-                openIndex === index ? "max-h-20 pb-3.5" : "max-h-0"
+                openIndex === index
+                  ? "max-h-20 max-md:max-h-28 pb-3.5"
+                  : "max-h-0"
               } transition-all duration-500 overflow-hidden`}
             >
               <Description text={data.description} />

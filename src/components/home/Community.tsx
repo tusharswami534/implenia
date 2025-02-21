@@ -13,7 +13,10 @@ import CustomButton from "../common/CustomButton";
 
 const Community = () => {
   return (
-    <div className="bg-gray pt-[129px] pb-[130px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5">
+    <div
+      id="community"
+      className="bg-gray pt-[129px] pb-[130px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5"
+    >
       <div className="container max-w-[1108px] flex flex-col justify-center relative mx-auto">
         <Heading
           myClass="pb-[144px] max-lg:pb-[100px] max-md:pb-[70px] max-sm:pb-[0px]"

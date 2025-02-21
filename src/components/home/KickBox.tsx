@@ -20,7 +20,7 @@ const KickBox = () => {
         <div className="flex justify-center max-lg:justify-start max-sm:justify-center flex-wrap max-w-[1072px] mx-auto items-center gap-[51px] max-lg:gap-10">
           {KICKBOX_PROCESS_LIST.map((item, index) => (
             <KickBoxCard
-              titleClass={item.titleClass}
+              titleClass={`${index === 1 ? "text-lightBlue" : item.titleClass}`}
               key={index}
               cardImage={item.image}
               title={item.title}

@@ -7,7 +7,7 @@ const HowItWorks = () => {
   const [playVideo, setPlayVideo] = useState(false);
   return (
     <div
-      id="community"
+      id="projects"
       className="bg-gray pt-[128px] pb-[144px] max-lg:py-28 max-md:py-20 max-sm:py-16 flex justify-center items-center px-5"
     >
       <div className="container max-w-[1118px] ">
