@@ -29,6 +29,12 @@ export default {
       backgroundPosition: {
         customRight: "0px ",
       },
+      boxShadow: {
+        whiteShadow: "100px 0px 0px #fff inset",
+        heroShadow: "320px 0px 0px #fff inset",
+        redShadow: "270px 0px 0px #FF132D inset",
+        navBarShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [],

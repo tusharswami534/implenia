@@ -15,7 +15,7 @@ const Header = () => {
     }
   });
   return (
-    <div className="bg-white py-[18.5px] max-xl:px-5 w-full flex shadow-[0_4px_8px_#00000040] justify-center items-center">
+    <div className="bg-white py-[18.5px] max-xl:px-5 w-full flex shadow-navBarShadow justify-center items-center">
       <div className="container max-w-[1177px] flex justify-between items-center">
         <Link href="/">
           <Image

@@ -27,7 +27,7 @@ const KickBoxCard = ({
         alt="card-image"
         className="pointer-events-none max-md:max-w-[200px]"
       />
-      <div className="w-full border border-solid rounded-[28px] max-md:rounded-2xl border-black pt-[18px] pb-[19px] px-[26px]">
+      <div className="w-full hover:scale-105 transition-all duration-300 border border-solid rounded-[28px] max-md:rounded-2xl border-black pt-[18px] pb-[19px] px-[26px]">
         <h4
           className={`text-[21px] leading-[100%] max-lg:text-xl pb-1 max-md:text-lg max-sm:text-base font-semibold ${titleClass}`}
         >

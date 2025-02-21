@@ -7,16 +7,16 @@ import CustomButton from "../common/CustomButton";
 const Stories = () => {
   return (
     <div className="pt-[128px] pb-[144px] ax-lg:py-28 max-md:py-20 max-sm:py-16 px-5">
-      <div className="container mx-auto max-w-[1091px] max-sm:flex max-sm:justify-center max-sm:flex-col max-sm:items-center">
+      <div className="container mx-auto max-w-[1091px] max-lg:flex max-lg:justify-center max-lg:flex-col max-sm:items-center">
         <Heading
-          myClass="pb-[25px] max-sm:pb-3"
+          myClass="pb-[25px] max-sm:pb-3 max-lg:text-center"
           text="INTRAPRENEURSHIP STORIES"
         />
-        <div className="max-w-[1071px] max-xl:gap-10 max-xl:justify-start max-sm:justify-center flex-wrap ml-auto flex justify-between">
+        <div className="max-w-[1071px] max-xl:gap-10 max-lg:justify-center flex-wrap ml-auto flex justify-between">
           {STORIES_LIST.map((item, index) => (
             <div
               key={index}
-              className="border border-solid max-w-[323px] border-black relative rounded-[28px] max-md:rounded-2xl"
+              className="border hover:scale-105 transition-all duration-300 border-solid max-w-[323px] border-black relative rounded-[28px] max-md:rounded-2xl"
             >
               <div
                 className={`max-w-[104px] w-full flex justify-center items-center min-h-[27px] rounded-[13.5px] absolute top-[27px] left-[23px] max-sm:top-4 max-sm:left-3 ${

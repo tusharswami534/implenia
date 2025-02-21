@@ -18,7 +18,7 @@ const HowItWorks = () => {
     >
       <div className="container max-w-[1118px] ">
         <Heading
-          myClass="mb-16 max-lg:mb-12 max-md:mb-10 max-sm:mb-8"
+          myClass="mb-16 max-lg:mb-12 max-md:mb-10 max-sm:mb-8 max-lg:text-center"
           text="HOW IT WORKS"
         />
         <div

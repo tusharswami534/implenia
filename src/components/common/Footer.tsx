@@ -9,7 +9,7 @@ const Footer = () => {
       id="contact"
       className="bg-black pt-[138px] pb-[65px] px-5 max-lg:pt-28 max-md:pt-20 max-sm:py-16 "
     >
-      <div className="max-w-[1117px] max-md:flex-col max-md:gap-y-10 flex container mx-auto justify-between">
+      <div className="max-w-[1117px] max-md:flex-col max-md:gap-y-10 flex gap-10 container mx-auto justify-between">
         <div className="max-w-[456px] max-md:max-w-[600px] w-full flex justify-between">
           <div className="max-w-[289px] max-sm:max-w-[250px]">
             <p className="font-black text-base max-sm:text-sm text-white leading-[20.11px] tracking-[-0.22px]">
@@ -25,7 +25,7 @@ const Footer = () => {
               innovation@implenia.com
             </Link>
             <p className="font-black mt-10 max-md:mt-5 max-sm:text-sm text-base text-white leading-[20.11px] tracking-[-0.22px]">
-              Implenia Innovation Hub
+              Implenia Kickbox
             </p>
             <p className="leading-[20.11px] max-sm:text-sm tracking-[-0.22px] text-white">
               This revised version is based on Adobe Kickbox which is licensed
@@ -62,7 +62,7 @@ const Footer = () => {
               <input
                 type="email"
                 required
-                className="py-[17px] px-[19px] placeholder:text-black placeholder:font-roboto text-sm placeholder:text-sm font-light placeholder:font-light outline-none w-full bg-white"
+                className="py-[15px] px-[19px] placeholder:text-black placeholder:font-roboto text-sm placeholder:text-sm font-light placeholder:font-light outline-none w-full bg-white"
                 placeholder="Ihre E-Mail"
               />
             </div>
@@ -72,7 +72,7 @@ const Footer = () => {
               placeholder="Ihre Nachricht..."
             ></textarea>
             <div className="w-full justify-end max-md:justify-start flex">
-              <button className="py-[7px] hover:shadow-[100px_0px_0px_#fff_inset] hover:text-red transition-all duration-300 px-[22.6px] bg-red text-white font-bold text-sm">
+              <button className="py-[7px] hover:shadow-whiteShadow hover:text-red transition-all duration-300 px-[22.6px] bg-red text-white font-bold text-sm">
                 SENDEN
               </button>
             </div>

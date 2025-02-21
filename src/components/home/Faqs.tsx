@@ -3,7 +3,6 @@ import { FAQ_LIST } from "@/utils/helper";
 import React, { useState } from "react";
 import Heading from "../common/Heading";
 import Description from "../common/Description";
-import Image from "next/image";
 import { FaqIcon } from "@/utils/icons";
 
 const Faqs = () => {
@@ -15,7 +14,7 @@ const Faqs = () => {
   return (
     <div className="bg-gray pt-[128px] pb-[146px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5">
       <div className="max-w-[1090px] container mx-auto">
-        <Heading myClass="pb-[9px]" text="FAQs" />
+        <Heading myClass="pb-[9px] max-lg:text-center" text="FAQs" />
         {FAQ_LIST.map((data, index: number) => (
           <div
             key={index}
@@ -23,7 +22,7 @@ const Faqs = () => {
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="text-[21px] font-semibold text-left py-3 leading-[21px] max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full"
+              className="text-[21px] font-semibold text-left py-3 leading-[21px]  gap-2 max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-5 text-blackLight flex justify-between items-center w-full"
             >
               {data.title}
               <span

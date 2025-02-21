@@ -19,7 +19,7 @@ const Community = () => {
     >
       <div className="container max-w-[1108px] flex flex-col justify-center relative mx-auto">
         <Heading
-          myClass="pb-[136px] max-lg:pb-[100px] max-md:pb-[70px] max-sm:pb-[0px]"
+          myClass="pb-[136px] max-lg:pb-[100px] max-md:pb-[70px] max-sm:pb-[0px] max-lg:text-center"
           text="WHAT OUR COMMUNITY SAYS"
         />
         <div>
