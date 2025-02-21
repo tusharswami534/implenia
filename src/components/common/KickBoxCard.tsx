@@ -25,7 +25,7 @@ const KickBoxCard = ({
         width={227}
         height={92}
         alt="card-image"
-        className="max-md:max-w-[200px]"
+        className="pointer-events-none max-md:max-w-[200px]"
       />
       <div className="w-full border border-solid rounded-[28px] max-md:rounded-2xl border-black pt-[18px] pb-[19px] px-[26px]">
         <h4

@@ -26,7 +26,7 @@ const HowItWorks = () => {
                 alt="youtube video"
                 width={1064}
                 height={580}
-                className="max-xl:h-[550px] max-lg:h-[450px] max-md:h-[300px] max-sm:h-[300px] max-[500px]:h-[250px] max-[400px]:h-[200px] rounded-[25px] max-md:rounded-2xl max-xl:w-full max-xl:max-w-[1064px]"
+                className="max-xl:h-[550px] pointer-events-none max-lg:h-[450px] max-md:h-[300px] max-sm:h-[300px] max-[500px]:h-[250px] max-[400px]:h-[200px] rounded-[25px] max-md:rounded-2xl max-xl:w-full max-xl:max-w-[1064px]"
               />
               <div className="w-[34.96%] h-[24.83%] bg-yellow absolute top-6 flex justify-center items-center left-[29px]">
                 <p className="text-[21px] max-lg:text-xl max-md:text-base max-md:leading-4 max-sm:text-[8px] max-sm:leading-[8px] !leading-[100%] text-blackLight text-center font-bold">
