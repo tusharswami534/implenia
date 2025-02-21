@@ -13,6 +13,7 @@ const Implenia = () => {
     triggerOnce: true,
     onChange: (inView) => setCount(inView),
   });
+
   return (
     <div
       id="stories"
