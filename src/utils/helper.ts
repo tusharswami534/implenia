@@ -19,20 +19,20 @@ interface StoriesItem {
 }
 
 interface CommunityItem {
-  image: string;
-  title: string;
-  cardBoxClass: string;
-  boxContent: string;
-}
-
-interface FaqItem {
-  title: string;
-  description: string;
+  heading: string;
+  profile: string;
+  post: string;
+  name: string;
 }
 
 interface FaqAnswerItem {
   title: string;
   description: string;
+}
+
+interface FooterItem {
+  title: string;
+  link: string;
 }
 
 export const HEADER_LIST: HeaderItem[] = [
@@ -138,7 +138,7 @@ export const COMMUNITY_LIST: CommunityItem[] = [
   },
 ];
 
-export const FAQ_LIST: FaqItem[] = [
+export const FAQ_LIST: FaqAnswerItem[] = [
   {
     title: "What kind of ideas can I submit?",
     description:
@@ -177,7 +177,7 @@ export const FAQ_LIST: FaqItem[] = [
   },
 ];
 
-export const FOOTER_LIST = [
+export const FOOTER_LIST: FooterItem[] = [
   {
     title: "Home",
     link: "#hero",
