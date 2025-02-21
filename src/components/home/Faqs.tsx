@@ -3,6 +3,8 @@ import { FAQ_LIST } from "@/utils/helper";
 import React, { useState } from "react";
 import Heading from "../common/Heading";
 import Description from "../common/Description";
+import Image from "next/image";
+import { FaqIcon } from "@/utils/icons";
 
 const Faqs = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -24,16 +26,15 @@ const Faqs = () => {
               className="text-[21px] font-semibold leading-[21px] max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full py-2"
             >
               {data.title}
-              {/* <img
-              width={"30px"}
-              className={`${
-                openIndex === i
-                  ? "rotate-180 transition-all duration-300"
-                  : "rotate-0 transition-all duration-300"
-              }`}
-              src={UpArrow}
-              alt="uparrow"
-            /> */}
+              <span
+                className={`${
+                  openIndex === index
+                    ? "rotate-90 transition-all duration-300"
+                    : "rotate-0 transition-all duration-300"
+                }`}
+              >
+                <FaqIcon />
+              </span>
             </button>
             <div
               className={`${

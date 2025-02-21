@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-black pt-[138px] pb-[65px]">
       <div className="max-w-[1117px] flex container mx-auto justify-between">
-        <div className="max-w-[456px] w-fullx flex justify-between">
+        <div className="max-w-[456px] w-full flex justify-between">
           <div className="max-w-[289px]">
             <p className="font-black text-base text-white leading-[20.11px] tracking-[-0.22px]">
               Implenia Innovation Hub
