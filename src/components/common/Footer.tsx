@@ -72,7 +72,7 @@ const Footer = () => {
               placeholder="Ihre Nachricht..."
             ></textarea>
             <div className="w-full justify-end max-md:justify-start flex">
-              <button className="py-[9.5px] hover:shadow-[100px_0px_0px_#fff_inset] hover:text-red transition-all duration-300 px-[21.5px] bg-red text-white font-bold text-sm">
+              <button className="py-[7px] hover:shadow-[100px_0px_0px_#fff_inset] hover:text-red transition-all duration-300 px-[22.6px] bg-red text-white font-bold text-sm">
                 SENDEN
               </button>
             </div>

@@ -5,6 +5,12 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   const [playVideo, setPlayVideo] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  const handleIframeLoad = () => {
+    setLoading(false);
+  };
+
   return (
     <div
       id="projects"
@@ -38,17 +44,24 @@ const HowItWorks = () => {
               </div>
             </div>
           ) : (
-            <iframe
-              width="100%"
-              height="580"
-              className="max-xl:h-[550px] max-lg:h-[450px] max-md:h-[300px] max-sm:h-[300px] max-[500px]:h-[250px] max-[400px]:h-[200px] rounded-[25px] max-md:rounded-2xl"
-              src="https://www.youtube.com/embed/N7ZmPYaXoic?autoplay=1"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              loading="lazy"
-            />
+            <div className="relative w-full">
+              {loading && (
+                <div className="absolute inset-0 flex justify-center items-center bg-white rounded-[25px] max-md:rounded-2xl">
+                  <div className="loader"></div>
+                </div>
+              )}
+              <iframe
+                width="100%"
+                height="580"
+                className="max-xl:h-[550px] max-lg:h-[450px] max-md:h-[300px] max-sm:h-[300px] max-[500px]:h-[250px] max-[400px]:h-[200px] rounded-[25px] max-md:rounded-2xl"
+                src="https://www.youtube.com/embed/N7ZmPYaXoic?autoplay=1"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                allowFullScreen
+                loading="lazy"
+                onLoad={handleIframeLoad}
+              />
+            </div>
           )}
         </div>
       </div>

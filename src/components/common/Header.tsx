@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState<Number | null>(0);
   useEffect(() => {
     if (open) {
       document.body.classList.add("overflow-hidden");
@@ -22,7 +23,7 @@ const Header = () => {
             alt="logo"
             width={93}
             height={93}
-            className="max-lg:size-20 pointer-events-none max-md:size-16 max-sm:size-12"
+            className={`max-lg:size-20 pointer-events-none max-md:size-16 max-sm:size-12`}
           />
         </Link>
         <div
@@ -32,10 +33,15 @@ const Header = () => {
         >
           {HEADER_LIST.map((item, index) => (
             <Link
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setOpen(false);
+                setActive(active === index ? null : index);
+              }}
               key={index}
               href={item.link}
-              className="text-base transition-all duration-300 tracking-[0.28px] max-sm:text-lg hover:text-orange font-bold leading-[20.11px] "
+              className={`text-base transition-all duration-300 tracking-[0.28px] max-sm:text-lg hover:text-orange font-bold leading-[20.11px] ${
+                active === index ? "text-orange" : "text-black"
+              }`}
             >
               {item.title}
             </Link>

@@ -19,7 +19,7 @@ const Community = () => {
     >
       <div className="container max-w-[1108px] flex flex-col justify-center relative mx-auto">
         <Heading
-          myClass="pb-[144px] max-lg:pb-[100px] max-md:pb-[70px] max-sm:pb-[0px]"
+          myClass="pb-[136px] max-lg:pb-[100px] max-md:pb-[70px] max-sm:pb-[0px]"
           text="WHAT OUR COMMUNITY SAYS"
         />
         <div>
@@ -61,6 +61,10 @@ const Community = () => {
                       </p>
                     </div>
                   </div>
+                  <CustomButton
+                    text="Join the community!"
+                    myClass="max-w-[268px] mx-auto mt-[39px]"
+                  />
                 </div>
               </SwiperSlide>
             ))}
@@ -72,10 +76,6 @@ const Community = () => {
             <PrevIcon />
           </button>
         </div>
-        <CustomButton
-          text="Join the community!"
-          myClass="max-w-[268px] mx-auto mt-[39px]"
-        />
       </div>
     </div>
   );

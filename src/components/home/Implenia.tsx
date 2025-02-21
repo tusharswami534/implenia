@@ -41,7 +41,7 @@ const Implenia = () => {
                     duration={3}
                   />
                 </h3>
-                <p className="font-bold text-[21px] leading-[100%] max-lg:text-xl max-md:text-lg max-sm:text-base text-center">
+                <p className="font-bold text-[21px] -mt-2 leading-[100%] max-lg:text-xl max-md:text-lg max-sm:text-base text-center">
                   {item}
                 </p>
               </div>
