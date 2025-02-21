@@ -42,7 +42,7 @@ const Stories = () => {
         </div>
         <CustomButton
           text="More Stories"
-          myClass="mt-[39px] max-lg:mt-7 max-md:mt-5  max-lg:mx-auto lg:ml-[39px]"
+          myClass="mt-[39px] max-lg:mt-7 max-md:mt-5 max-lg:mx-auto lg:ml-[39px]"
         />
       </div>
     </div>
